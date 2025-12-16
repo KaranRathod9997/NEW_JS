@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // // 1. find maximum between two numbers
+      //   var a = Number(prompt("Enter first number:"));
+      //   var b = Number(prompt("Enter second number:"));
+      //   if (a > b) {
+      //     document.write("a is max");
+      //   } else {
+      //     document.write("b is max");
+      //   }
+
+      // // 2. find maximum between three numbers.
+      //   var a = Number(prompt("Enter first number:"));
+      //   var b = Number(prompt("Enter second number:"));
+      //   var c = Number(prompt("Enter third number:"));
+      //   if (a > b && a > c) {
+      //     document.write("a is max");
+      //   } else if (b > c) {
+      //     document.write("b is max");
+      //   } else {
+      //     document.write("c is max");
+      //   }
+
+      // // 3. check whether a number is negative, positive or zero.
+      //   var a = Number(prompt("Enter any number:"));
+      //   if (a < 0) {
+      //     document.write("number is negetive");
+      //   } else if (a > 0) {
+      //     document.write("number is positive");
+      //   } else {
+      //     document.write("number is zero");
+      //   }
+
+      // // 4. check whether a number is divisible by 5 and 11 or not.
+      //   var a = Number(prompt("Enter any number:"));
+      //   if ((a % 5 == 0) && (a % 11 == 0)) {
+      //     document.write("Number is divisible by 5 and 11");
+      //   } else {
+      //     document.write("Number is not divisible by 5 and 11");
+      //   }
+
+      // // 5. check whether a number is even or odd.
+      //   var a = Number(prompt("Enter any number:"));
+      //   if (a % 2 == 0) {
+      //     document.write("Number is Even.");
+      //   } else {
+      //     document.write("Number is odd.");
+      //   }
+
+      // // 6. check whether a year is leap year or not.
+      //   var a = Number(prompt("Enter any year:"));
+      //   if (a % 4 == 0) {
+      //     document.write("LEAP YEAR.");
+      //   } else {
+      //     document.write("COMMON YEAR.");
+      //   }
+
+      // // 7. check whether a character is alphabet or not.
+      // var a = prompt("Enter any character :");
+      // if ((a >= "a" && a <= "z") || (a >= "A" && a <= "Z")) {
+      //   document.write("Character is an ALPHABET.");
+      // } else {
+      //   document.write("Character is NOT ALPHABET.");
+      // }
+
+      // // 8. any alphabet and check whether it is vowel or consonant.
+      // var a = prompt("Enter any character :");
+      // if (
+      //   a == "a" ||
+      //   a == "e" ||
+      //   a == "i" ||
+      //   a == "o" ||
+      //   a == "u" ||
+      //   a == "A" ||
+      //   a == "E" ||
+      //   a == "I" ||
+      //   a == "O" ||
+      //   a == "U"
+      // ) {
+      //   document.write("Character is Vowel.");
+      // } else if ((a >= "a" && a <= "z") || (a >= "A" && a <= "Z")) {
+      //   document.write("Character is Consonant.");
+      // } else {
+      //   document.write("Character is not an alphabet.");
+      // }
+
+      // // 9. any character and check whether it is alphabet, digit or special character.
+      // var a = prompt("Enter any character :");
+      // if ((a >= "a" && a <= "z") || (a >= "A" && a <= "Z")) {
+      //   document.write("Character is alphabet.");
+      // } else if (a >= "0" && a <= "9") {
+      //   document.write("Character is digit.");
+      // } else {
+      //   document.write("Character is special character.");
+      // }
+
+      // // 10.  check whether a character is uppercase or lowercase alphabet.
+      // var a = prompt("Enter any character :");
+      // if (a >= "A" && a <= "Z") {
+      //   document.write("Character is uppercase alphabet.");
+      // } else if (a >= "a" && a <= "z") {
+      //   document.write("Character is lowercase alphabet.");
+      // } else {
+      //   document.write("Character is not an alphabet.");
+      // }
+
+      // // 11.   input week number and print week day.
+      // var d = prompt("Enter any number 1 to 7 :");
+      // if (d == 1) {
+      //   document.write("Monday");
+      // } else if (d == 2) {
+      //   document.write("Tuesday");
+      // } else if (d == 3) {
+      //   document.write("Wednesday");
+      // } else if (d == 4) {
+      //   document.write("Thursday");
+      // } else if (d == 5) {
+      //   document.write("Friday");
+      // } else if (d == 6) {
+      //   document.write("Saturday");
+      // } else if (d == 7) {
+      //   document.write("Sunday");
+      // } else {
+      //   document.write("Invalid Input! Please enter week number between 1-7.");
+      // }
+
+      // // 12.   input month number and print number of days in that month.
+      // var d = prompt("Enter month number (1-12): ");
+      // if (d == 1) {
+      //   document.write("31 days");
+      // } else if (d == 2) {
+      //   document.write("28 or 29 days");
+      // } else if (d == 3) {
+      //   document.write("31 days");
+      // } else if (d == 4) {
+      //   document.write("30 days");
+      // } else if (d == 5) {
+      //   document.write("31 days");
+      // } else if (d == 6) {
+      //   document.write("30 days");
+      // } else if (d == 7) {
+      //   document.write("31 days");
+      // } else if (d == 8) {
+      //   document.write("31 days");
+      // } else if (d == 9) {
+      //   document.write("30 days");
+      // } else if (d == 10) {
+      //   document.write("31 days");
+      // } else if (d == 11) {
+      //   document.write("30 days");
+      // } else if (d == 12) {
+      //   document.write("31 days");
+      // } else {
+      //   document.write(
+      //     "Invalid input! Please enter month number between (1-12)."
+      //   );
+      // }
+
+      // // 13. count total number of notes in given amount.
+      // let amount = Number(prompt("Enter the amount:"));
+      // let count;
+
+      // if (amount >= 500) {
+      //   count = parseInt(amount / 500);
+      //   document.write("Rs. 500 = " + count + "<br>");
+      //   amount = amount % 500;
+      // }
+
+      // if (amount >= 100) {
+      //   count = parseInt(amount / 100);
+      //   document.write("Rs. 100 = " + count + "<br>");
+      //   amount = amount % 100;
+      // }
+
+      // if (amount >= 50) {
+      //   count = parseInt(amount / 50);
+      //   document.write("Rs. 50 = " + count + "<br>");
+      //   amount = amount % 50;
+      // }
+
+      // if (amount >= 20) {
+      //   count = parseInt(amount / 20);
+      //   document.write("Rs. 20 = " + count + "<br>");
+      //   amount = amount % 20;
+      // }
+
+      // if (amount >= 10) {
+      //   count = parseInt(amount / 10);
+      //   document.write("Rs. 10 = " + count + "<br>");
+      //   amount = amount % 10;
+      // }
+
+      // if (amount >= 5) {
+      //   count = parseInt(amount / 5);
+      //   document.write("Rs. 5 = " + count + "<br>");
+      //   amount = amount % 5;
+      // }
+
+      // if (amount >= 2) {
+      //   count = parseInt(amount / 2);
+      //   document.write("Rs. 2 = " + count + "<br>");
+      //   amount = amount % 2;
+      // }
+
+      // if (amount >= 1) {
+      //   count = amount;
+      //   document.write("Rs. 1 = " + count + "<br>");
+      // }
+
+      // // 14. input angles of a triangle and check whether triangle is valid or not.
+      // var a = Number(prompt("Enter First angle:"));
+      // var b = Number(prompt("Enter Second angle:"));
+      // var c = Number(prompt("Enter Third angle:"));
+      // if (a + b + c == 180 && a > 0 && b > 0 && c > 0) {
+      //   document.write("Triangle is valid.");
+      // } else {
+      //   document.write("Triangle is not valid.");
+      // }
+
+      // // 15. input all sides of a triangle and check whether triangle is valid or not.
+      // var a = Number(prompt("Enter First angle:"));
+      // var b = Number(prompt("Enter Second angle:"));
+      // var c = Number(prompt("Enter Third angle:"));
+      // if (a + b > c) {
+      //   if (a + c > b) {
+      //     if (b + c > a) {
+      //       document.write("Triangle is valid.");
+      //     } else {
+      //       document.write("Triangle is not valid.");
+      //     }
+      //   } else {
+      //     document.write("Triangle is not valid.");
+      //   }
+      // } else {
+      //   document.write("Triangle is not valid.");
+      // }
+
+      // // 16. check whether the triangle is equilateral, isosceles or scalene triangle.
+      // var a = Number(prompt("Enter First angle:"));
+      // var b = Number(prompt("Enter Second angle:"));
+      // var c = Number(prompt("Enter Third angle:"));
+      // if (a == b && a == c) {
+      //   document.write("Equilateral triangle.");
+      // } else if (a == b || a == c || b == c) {
+      //   document.write("Isosceles  triangle.");
+      // } else {
+      //   document.write("Scalene  triangle.");
+      // }
+
+      // // 17. find all roots of a quadratic equation.
+      // var a = Number(prompt("Enter value of a:"));
+      // var b = Number(prompt("Enter value of b:"));
+      // var c = Number(prompt("Enter value of c:"));
+
+      // var discriminant = b * b - 4 * a * c;
+      // var root1, root2, imaginary;
+
+      // if (discriminant > 0) {
+      //   root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+      //   root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+
+      //   document.write(
+      //     "Two distinct and real roots exist: " +
+      //       root1.toFixed(2) +
+      //       " and " +
+      //       root2.toFixed(2)
+      //   );
+      // } else if (discriminant === 0) {
+      //   root1 = -b / (2 * a);
+
+      //   document.write(
+      //     "Two equal and real roots exist: " +
+      //       root1.toFixed(2) +
+      //       " and " +
+      //       root1.toFixed(2)
+      //   );
+      // } else {
+      //   root1 = -b / (2 * a);
+      //   imaginary = Math.sqrt(-discriminant) / (2 * a);
+
+      //   document.write(
+      //     "Two distinct complex roots exist: " +
+      //       root1.toFixed(2) +
+      //       " + i" +
+      //       imaginary.toFixed(2) +
+      //       " and " +
+      //       root1.toFixed(2) +
+      //       " - i" +
+      //       imaginary.toFixed(2)
+      //   );
+      // }
+
+      // // 18. to calculate profit or loss.
+      // var cp = Number(prompt("Enter cost prize : "));
+      // var sp = Number(prompt("Enter sell prize : "));
+      // var amt;
+      // if (sp > cp) {
+      //   amt = sp - cp;
+      //   document.write("Profit =", amt);
+      // } else if (cp > sp) {
+      //   amt = cp - sp;
+      //   document.write("Loss =", amt);
+      // } else {
+      //   document.write("No Profit No Loss.");
+      // }
+
+      // // 19. calculate percentage and grade according to given conditions:
+      // var p = Number(prompt("Enter Physics marks:"));
+      // var ch = Number(prompt("Enter Chemistry marks:"));
+      // var b = Number(prompt("Enter Biology marks:"));
+      // var m = Number(prompt("Enter Mathematics marks:"));
+      // var co = Number(prompt("Enter Computer marks:"));
+
+      // var total = p + ch + b + m + co;
+      // var percentage = total / 5;
+      // var grade;
+
+      // if (percentage >= 90) {
+      //   grade = "A";
+      // } else if (percentage >= 80) {
+      //   grade = "B";
+      // } else if (percentage >= 70) {
+      //   grade = "C";
+      // } else if (percentage >= 60) {
+      //   grade = "D";
+      // } else if (percentage >= 40) {
+      //   grade = "E";
+      // } else {
+      //   grade = "F";
+      // }
+
+      // document.write("Total Marks = " + total + "<br>");
+      // document.write("Percentage = " + percentage.toFixed(2) + "%<br>");
+      // document.write("Grade = " + grade);
+
+      // // 20. basic salary of an employee and calculate its Gross salary
+      // var basic = Number(prompt("Enter Basic Salary:"));
+      // var hra, da, gross;
+
+      // if (basic <= 10000) {
+      //   hra = basic * 0.2;
+      //   da = basic * 0.8;
+      // } else if (basic <= 20000) {
+      //   hra = basic * 0.25;
+      //   da = basic * 0.9;
+      // } else {
+      //   hra = basic * 0.3;
+      //   da = basic * 0.95;
+      // }
+
+      // gross = basic + hra + da;
+
+      // document.write("Basic Salary = " + basic + "<br>");
+      // document.write("HRA = " + hra.toFixed(2) + "<br>");
+      // document.write("DA = " + da.toFixed(2) + "<br>");
+      // document.write("Gross Salary = " + gross.toFixed(2));
+
+      // // 21. electricity unit charge and calculate the total electricity bill according to the given condition:
+      // var units = Number(prompt("Enter electricity units:"));
+      // var bill = 0;
+
+      // if (units <= 50) {
+      //   bill = units * 0.5;
+      // } else if (units <= 150) {
+      //   bill = 25 + (units - 50) * 0.75;
+      // } else if (units <= 250) {
+      //   bill = 25 + 75 + (units - 150) * 1.2;
+      // } else {
+      //   bill = 25 + 75 + 120 + (units - 250) * 1.5;
+      // }
+
+      // // 20% surcharge
+      // bill = bill + bill * 0.2;
+
+      // document.write("Total Electricity Bill = Rs. " + bill);
+    </script>
+  </body>
+</html>
