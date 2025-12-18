@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // // 1. Print natural numbers from 1 to n
+      //   let n = Number(prompt("Enter a positive number: "));
+      //   for (let i = 1; i <= n; i++) {
+      //     document.write(i, " ");
+      //   }
+
+      // 2. Print alphabets from a to z
+      //   for (let i = 97; i <= 122; i++) {
+      //     document.write(String.fromCharCode(i), " ");
+      //   }
+
+      // // 3. Print even numbers from 1 to n
+      //   let n = Number(prompt("Enter a positive number: "));
+      //   for (let i = 1; i <= n; i++) {
+      //     if (i % 2 === 0) {
+      //       document.write(i, " ");
+      //     }
+      //   }
+
+      // // 4. Print sum of all numbers from 1 to n
+      // let n = Number(prompt("Enter a number"));
+      // let sum = 0;
+      // for (let i = 1; i <= n; i++) {
+      //   sum = sum + i;
+      // }
+
+      // // 5. Print sum of all odd numbers from 1 to n
+      //   let n = Number(prompt("Enter a number"));
+      //   let sum = 0;
+      //   for (let i = 1; i <= n; i += 2) {
+      //     //   if (i % 2 !== 0){}
+      //     sum = sum + i;
+      //   }
+      //   document.write("Sum =", sum);
+
+      // // 6. Print multiplication table of a given number
+      //   let n = Number(prompt("Enter a number to print its multiplication table: "));
+      //   document.write("Multiplication Table of ", n, ":<br>");
+      //   for (let i = 1; i <= 10; i++) {
+      //     document.write(n, " x ", i, " = ", n * i, "<br>");
+      //   }
+
+      // // 7. Find number of digits in a number
+      // let n = Number(prompt("Enter a number: "));
+      // let count = 0;
+      // while (n != 0) {
+      //   n = Math.floor(n / 10);
+      //   count++;
+      // }
+      // document.write("Number of digits: ", count);
+
+      // // 8. Find first and last digit
+      // let n = Number(prompt("Enter a number: "));
+      // let lastDigit = n % 10;
+      // let firstDigit = n;
+      // while (firstDigit >= 10) {
+      //   firstDigit = Math.floor(firstDigit / 10);
+      // }
+      // document.write("First Digit: ", firstDigit, "<br>");
+      // document.write("Last Digit: ", lastDigit);
+
+      // // 9. Swap first and last digit
+      // let n = Number(prompt("Enter a number: "));
+      // let numStr = n.toString();
+      // if (numStr.length === 1) {
+      //   document.write("Swapped Number: ", n);
+      // } else {
+      //   let swappedStr = numStr.charAt(numStr.length - 1) + numStr.slice(1, -1) + numStr.charAt(0);
+      //   document.write("Swapped Number: ", swappedStr);
+      // }
+
+      // // 10. Find sum of digits of a number
+
+      //   let n = Number(prompt("Enter a number: "));
+      //   let sum = 0;
+      //   while (n > 0) {
+      //     let digit = n % 10;
+      //     sum += digit;
+      //     n = Math.floor(n / 10);
+      //   }
+      //   document.write("Sum of digits: ", sum);
+
+      // // 11. find reverse of a number
+      // let n = Number(prompt("Enter a number: "));
+      // let rev = 0;
+      // while (n > 0) {
+      //   let digit = n % 10;
+      //   rev = rev * 10 + digit;
+      //   n = Math.floor(n / 10);
+      // }
+      // document.write("Reversed Number: ", rev);
+
+      // // 12. Find frequency of digits in a number
+      // let n = Number(prompt("Enter a number: "));
+      // let freq = Array(10).fill(0);
+      // while (n > 0) {
+      //   let digit = n % 10;
+      //   freq[digit]++;
+      //   n = Math.floor(n / 10);
+      // }
+      // for (let i = 0; i < freq.length; i++) {
+      //   if (freq[i] > 0) {
+      //     document.write("Digit ", i, " occurs ", freq[i], " times<br>");
+      //   }
+      // }
+
+      //   // 13. Find power of a number using loop
+      //   let base = Number(prompt("Enter base number: "));
+      //   let exponent = Number(prompt("Enter exponent number: "));
+      //   let result = 1;
+      //   for (let i = 1; i <= exponent; i++) {
+      //     result = result * base;
+      //   }
+      //   document.write(base, " raised to the power ", exponent, " is ", result);
+
+      // // 14. Find factorial of a number
+      // let n = Number(prompt("Enter a number: "));
+      // let fact = 1;
+      // for (let i = 1; i <= n; i++) {
+      //   fact = fact * i;
+      // }
+      // document.write("Factorial of ", n, " is ", fact);
+
+      // // 15. Find HCF of two numbers
+      //     let a = Number(prompt("Enter first number: "));
+      //     let b = Number(prompt("Enter second number: "));
+      //     let hcf = 1;
+      //     for (let i = 1; i <= Math.min(a, b); i++) {
+      //       if (a % i === 0 && b % i === 0) {
+      //         hcf = i;
+      //       }
+      //     }
+      //     document.write("HCF of ", a, " and ", b, " is ", hcf);
+
+      // // 16. Find LCM of two numbers
+      //     let a = Number(prompt("Enter first number: "));
+      //     let b = Number(prompt("Enter second number: "));
+      //     let lcm = (a * b) / (function findHCF(x, y) {
+      //       while (y) {
+      //         let temp = y;
+      //         y = x % y;
+      //         x = temp;
+      //       }
+      //       return x;
+      //     })(a, b);
+      //     document.write("LCM of ", a, " and ", b, " is ", lcm);
+    </script>
+  </body>
+</html>
