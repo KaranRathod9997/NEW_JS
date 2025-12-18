@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <script>
+      // // 1. Prime Numbers or Composite Number
+      //   var number = Number(prompt("Enter any Positive Number: "));
+      //   let isPrime = true;
+
+      //   if (number === 1) {
+      //     document.write("1 is neither prime nor composite number.");
+      //   } else if (number > 1) {
+      //     for (let i = 2; i <= number / 2; i++) {
+      //       if (number % i == 0) {
+      //         isPrime = false;
+      //         break;
+      //       }
+      //     }
+      //     if (isPrime) {
+      //       document.write(number, " is a prime number");
+      //     } else {
+      //       document.write(number, " is not a prime number");
+      //     }
+      //   } else {
+      //     document.write(number, " is not a number / negetive number / zero");
+      //   }
+
+      // // 2. fibonacci series
+      //   var n = Number(prompt("Enter how many terms: "));
+      //   var a = 0,
+      //     b = 1,
+      //     c;
+
+      //   document.write("Fibonacci Series: ");
+      //   while (n > 0) {
+      //     document.write(a, " ");
+      //     c = a + b;
+      //     a = b;
+      //     b = c;
+      //     n--;
+      //   }
+
+      // // 3. find the "prime factorial" of a number
+      // let n = Number(prompt("Enter a number: "));
+      // document.write("Prime factorial of ", n, " is : ");
+      // for (let i = 2; i <= n; i++) {
+      //   while (n % i === 0) {
+      //     document.write(i, " ");
+      //     n = n / i;
+      //   }
+      // }
+
+      // // 4. sum of 3 digit
+      // let n = Number(prompt("Enter a number: "));
+      // let sum = 0;
+
+      // while (n > 0) {
+      //   let rem = n % 10; // last digit
+      //   sum = sum + rem; // add digit
+      //   n = parseInt(n / 10); // remove last digit (NO decimal)
+      // }
+
+      // document.write("Sum of digits is: " + sum);
+
+      // 5. reverse of 3 digit
+      // let n = Number(prompt("Enter a number: "));
+      // let rev = 0;
+
+      // while (n > 0) {
+      //   let digit = n % 10;
+      //   rev = rev * 10 + digit;
+      //   n = (n - digit) / 10;
+      // }
+
+      // document.write("Reversed number is:", rev);
+
+      // 6. armstrong
+      // let num = Number(prompt("Enter a number: "));
+      // let temp = num;
+      // let sum = 0;
+
+      // while (temp > 0) {
+      //   let digit = temp % 10; // last digit
+      //   sum = sum + digit * digit * digit; // cube add
+      //   temp = (temp - digit) / 10; // remove digit
+      // }
+
+      // if (sum === num) {
+      //   document.write("Armstrong Number");
+      // } else {
+      //   document.write("Not Armstrong Number");
+      // }
+
+      // // 7. palindrome
+      // let str = prompt("Enter any characters :");
+      // let rev = "";
+
+      // for (let i = str.length - 1; i >= 0; i--) {
+      //   rev = rev + str[i];
+      // }
+
+      // if (rev === str) {
+      //   console.log("Palindrome String");
+      // } else {
+      //   console.log("Not Palindrome String");
+      // }
+    </script>
+  </body>
+</html>
